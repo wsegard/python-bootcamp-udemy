@@ -3,7 +3,7 @@ from random import randint
 a = randint(1,101)
 print(a)
 guess_history = []
-guess = input("What's your first guess: ")
+guess = int(input("What's your first guess: "))
 guess_history.append(guess)
 while a != guess:
   if guess < 1 or guess > 100:
@@ -22,5 +22,5 @@ while a != guess:
       else:
         print("COLDER")
   guess_history.append(guess)
-  guess = input("What's your new guess: ")
+  guess = int(input("What's your new guess: "))
 print("you have guessed correctly. It took you {} guesses" .format(len(guess_history)))
