@@ -5,7 +5,7 @@ import seaborn as sns
 
 train = pd.read_csv('titanic_train.csv')
 #print(train.head())
-#print(train.info())
+print(train.info())
 
 #sns.heatmap(train.isnull(),yticklabels=False,cbar=False,cmap='viridis')
 
